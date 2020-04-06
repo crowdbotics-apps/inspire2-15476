@@ -23,6 +23,7 @@ class CustomText(models.Model):
 
 class HomePage(models.Model):
     body = models.TextField()
+    featured_image = models.CharField(max_length=256, null=True, blank=True,)
 
     @property
     def api(self):
